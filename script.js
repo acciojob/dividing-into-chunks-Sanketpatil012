@@ -7,7 +7,7 @@ const divide = (arr, n) => {
  let  currentSum=0; 
   
   for(let num of arr){
-    if(currentSum + num >= n){
+    if(currentSum + num <= n){
 		subArray.push(num)
 		currentSum+=num
 	}else{
@@ -17,11 +17,11 @@ const divide = (arr, n) => {
 		 
 	}
   }
-	if(arr.length >  0){
+	if(subArray.length >  0){
 		result.push(subArray)
 	}
 	 return result 
 };
 
-const n = prompt("Enter n: ");
+//const n = prompt("Enter n: ");
 alert(JSON.stringify(divide(arr, n)));
