@@ -18,8 +18,8 @@ const divide = (arr, n) => {
   if(subArray.length > 0){
     result.push(subArray)
   }
-  return resul
+  return result
 };
 
-//const n = prompt("Enter n: ");
+const n = prompt("Enter n: ");
 alert(JSON.stringify(divide(arr, n)));
